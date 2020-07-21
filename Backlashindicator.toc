@@ -1,0 +1,7 @@
+## Interface: 20400
+## Title: BacklashIndicator
+## Author: Oldsalt, updated by Macumba
+## Notes: Simple add-on to highlight your procs
+## DefaultState: disabled
+## SavedVariables: savedBacklashSettings
+BacklashIndicator.lua
