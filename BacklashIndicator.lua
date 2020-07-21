@@ -15,7 +15,7 @@ BacklashBackground:SetWidth(36)
 BacklashBackground:SetHeight(36)
 
 local BacklashTexture = BacklashFrame:CreateTexture(nil)
-BacklashTexture:SetTexture("Interface\\Icons\\Spell_Fire_PlayingWithFire")
+BacklashTexture:SetTexture("Interface\\Icons\\ability_warrior_innerrage")
 BacklashTexture:SetPoint("LEFT")
 BacklashTexture:SetWidth(36)
 BacklashTexture:SetHeight(36)
@@ -138,7 +138,7 @@ BacklashUpdateFrame:SetScript("OnUpdate", function(self, event, arg1)
 	for i=1,40 do
 		if select(1, UnitBuff("player", i)) ~= nil then
 			local spellName, _, _, _, _, spellDur = UnitBuff("player", i)
-            if spellName == GetSpellInfo(34939) then 
+            if spellName == GetSpellInfo(20375) then 
 			    BacklashTexture:Show()
                 BacklashFont:SetText(spellDur - spellDur % 0.1)
                 backlashCheck = 1
@@ -158,7 +158,17 @@ BacklashUpdateFrame:SetScript("OnUpdate", function(self, event, arg1)
                 BacklashFont:SetText(spellDur - spellDur % 0.1)
                 backlashCheck = 1
             end
-		elseif backlashCheck == 0 and BacklashTexture:IsShown() then
+		if spellName == GetSpellInfo(34936) then
+                BacklashTexture:Show()
+                BacklashFont:SetText(spellDur - spellDur % 0.1)
+                backlashCheck = 1
+            end
+			if spellName == GetSpellInfo(34936) then
+                BacklashTexture:Show()
+                BacklashFont:SetText(spellDur - spellDur % 0.1)
+                backlashCheck = 1
+            end	
+			elseif backlashCheck == 0 and BacklashTexture:IsShown() then
 			BacklashTexture:Hide()
 			BacklashFont:SetText("")
 			break
