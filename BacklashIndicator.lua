@@ -143,27 +143,27 @@ BacklashUpdateFrame:SetScript("OnUpdate", function(self, event, arg1)
                 BacklashFont:SetText(spellDur - spellDur % 0.1)
                 backlashCheck = 1
             end
-			if spellName == GetSpellInfo(34938) then
+			if spellName == GetSpellInfo(20915) then
                 BacklashTexture:Show()
                 BacklashFont:SetText(spellDur - spellDur % 0.1)
                 backlashCheck = 1
             end
-			if spellName == GetSpellInfo(34935) then
+			if spellName == GetSpellInfo(20918) then
                 BacklashTexture:Show()
                 BacklashFont:SetText(spellDur - spellDur % 0.1)
                 backlashCheck = 1
             end
-			if spellName == GetSpellInfo(34936) then
+			if spellName == GetSpellInfo(20919) then
                 BacklashTexture:Show()
                 BacklashFont:SetText(spellDur - spellDur % 0.1)
                 backlashCheck = 1
             end
-		if spellName == GetSpellInfo(34936) then
+		if spellName == GetSpellInfo(20920) then
                 BacklashTexture:Show()
                 BacklashFont:SetText(spellDur - spellDur % 0.1)
                 backlashCheck = 1
             end
-			if spellName == GetSpellInfo(34936) then
+			if spellName == GetSpellInfo(27170) then
                 BacklashTexture:Show()
                 BacklashFont:SetText(spellDur - spellDur % 0.1)
                 backlashCheck = 1
