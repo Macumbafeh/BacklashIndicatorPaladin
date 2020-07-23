@@ -1,2 +1,2 @@
 # BacklashIndicatorRogue
-Updated version of BacklashIndicator to track Seal of command proc for Paladin
+Updated version of BacklashIndicator to track Mangoose proc and Slice and Dice proc for Rogues
